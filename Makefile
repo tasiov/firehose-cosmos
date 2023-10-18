@@ -10,11 +10,11 @@ DOCKER_UID   ?= 1234
 
 .PHONY: build
 build:
-	go build -o build/firecosmos -ldflags "$(LDFLAGS)" ./cmd/firecosmos/cli
+	go build -o build/firecosmos -ldflags "$(LDFLAGS)" ./cmd/firecosmos/main.go
 
 .PHONY: install
 install:
-	go install -ldflags "$(LDFLAGS)" ./cmd/firecosmos/cli
+	go install -ldflags "$(LDFLAGS)" ./cmd/firecosmos/main.go
 
 .PHONY: build-all
 build-all:
