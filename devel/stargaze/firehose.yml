@@ -1,0 +1,11 @@
+start:
+  args:
+    - firehose
+    - merger
+    - reader-node
+    - relayer
+  flags:
+    # Specifies the path to the binary
+    reader-node-path: "starsd"
+    # Flags that will be added to the dummy chain process command
+    reader-node-arguments: "start --x-crisis-skip-assert-invariants"

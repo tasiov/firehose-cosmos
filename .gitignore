@@ -4,7 +4,5 @@ devel/**/tmp
 fh-data
 dist/
 build/
-firehose.yml
-firehose-*.yml
 .vscode/
 .idea/
